@@ -16,7 +16,7 @@ export default function HeroSection({ className = "", children, ...props }) {
     }, []);
     return (
         <section className={`${className} text-white border-b border-[rgba(255,255,255,0.2)] relative flex  md:flex-col    items-end   md:py-0 h-[50vh]  md:h-screen`} {...props}>
-            <img className={`h-full brightness-45 min-w-full object-cover`} src={`/src/assets/images/${theme}Hero.jpg`} alt="" />
+            <img className={`h-full brightness-45 min-w-full object-cover`} src={`./${theme}Hero.jpg`} alt="" />
             <div className={` text-center   flex flex-col items-center md:block  md:text-start absolute  top-[15rem] w-full left-1/2 -translate-x-1/2 -translate-y-1/2 ${paddingX}`}>
                 <h1 className="text-center  md:text-start text-[2.5rem] md:text-[5rem] w-full font-bold">PERFECTION</h1>
                 <p className={`text-[1.1rem] md:text-[1.5rem]  opacity-80 `}>10 secret recipes to level up your professional skills</p>

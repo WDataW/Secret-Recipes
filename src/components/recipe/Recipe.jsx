@@ -25,7 +25,6 @@ export default function Recipe({ index, recipe, className = "", children, ...pro
     }, []);
     const selfRef = useRef(null);
     const isInView = useInView(selfRef, { amount: 0.95 });
-    console.log(isInView + " " + recipe.title);
 
     return (
         <motion.div ref={selfRef} initial={{ opacity: 0, y: 0 }} transition={{ duration: 0.5 }} whileInView={{ opacity: 1, y: 0, }} viewport={{ once: true }} id={recipe.title.toLowerCase()} className={`${bgColors[theme]} ${w < 768 && isInView ? "hoverRecipe" : ""} hover:shadow-lg scroll-mt-[5rem] shadow-yellow-600/50 transition duration-600 p-[2rem] min-w-[10rem] flex-1  h-full rounded-[1rem] ${className}`} {...props}>
