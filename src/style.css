@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: "Roboto Flex";
+    src: url(/src/assets/fonts/RobotoFlex-VariableFont.ttf);
+}
+
+:root {
+    --color-primary-dark-bg: #f7f6f5;
+    --color-primary-light-bg: #08090a;
+}
+
+@layer components {
+    body {
+        font-family: "Roboto Flex";
+    }
+
+    * {
+        @apply scroll-smooth
+    }
+
+    .light-glass {
+        background-color: rgba(255, 255, 255, 0.15);
+        backdrop-filter: blur(12px);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+    }
+
+    .dark-glass {
+        background-color: rgba(0, 0, 0, 0.15);
+        backdrop-filter: blur(12px);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+    }
+
+    .hoverRecipe {
+        @apply shadow-lg scroll-mt-[5rem]
+    }
+
+    .infiniteScroll {
+        animation: infiniteTranslateY 20s linear infinite;
+    }
+
+    .infiniteScroll:hover {
+        animation-play-state: paused;
+    }
+}
+
+@keyframes infiniteTranslateY {
+    0% {
+        transform: translateY(-80%);
+    }
+
+    100% {
+        transform: translateY(80%);
+    }
+
+}
