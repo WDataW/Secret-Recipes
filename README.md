@@ -22,7 +22,7 @@ This is a simple webpage that presents 10 Secret Recipes for Professional Succes
 👉 [wdataw.github.io/secret-recipes](https://wdataw.github.io/secret-recipes/)
 
 
-## technologies:
+## Technologies:
   1. React.js
   2. Tailwind CSS
   3. Framer Motion
