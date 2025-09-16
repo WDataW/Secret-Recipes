@@ -13,7 +13,7 @@ export const paddingX = " px-[2rem] sm:px-[5rem] md:px-[7rem]";
 export default function MainPage({ className = "", children, ...props }) {
     const [theme] = useTheme();
     return (
-        <div className={`text-white min-h-screen ${primaryBgColors[theme]} ${className}`} {...props}>
+        <div className={`text-black min-h-screen ${primaryBgColors[theme]} ${className}`} {...props}>
             <Nav></Nav>
 
             <main className={` overflow-hidden`}>

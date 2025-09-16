@@ -20,28 +20,8 @@ export function getBrowserPreference() {
 }
 export default function Theme({ children }) {
 
-    const [theme, setTheme] = useState("dark");// deactivated light theme since it isn't ready
+    const [theme, setTheme] = useState("light");
 
-
-
-    function initTheme() {
-        //     const theme = getBrowserPreference();
-        //     document.documentElement.setAttribute("theme", theme);
-        //     setTheme(theme);
-
-    }
-    // useEffect(() => {
-    //     window.matchMedia('(prefers-color-scheme: dark)').addEventListener("change",
-    //         initTheme
-    //     );
-    //     return () => {
-    //         window.matchMedia('(prefers-color-scheme: dark)').removeEventListener("change",
-    //             initTheme
-    //         );
-    //     };
-
-    // }, []
-    // );
     return (
         <ThemeContext value={[theme, setTheme]}>
             {children}

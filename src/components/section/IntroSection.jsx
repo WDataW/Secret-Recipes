@@ -19,14 +19,14 @@ export default function IntroSection({ className = "", children, ...props }) {
         "Networking"
     ];
     return (
-        <section id="intro" className={`${paddingX} scroll-mt-[3rem] scroll-smooth py-[2rem] md:py-[3rem] border-b border-[rgba(255,255,255,0.2)] ${className}`} {...props}>
-            <h1 className="text-[1.5rem] md:text-[2rem] font-bold mb-[1rem]">Why <span className="text-yellow-600 ">PERFECTION</span> ?</h1>
+        <section id="intro" className={`${paddingX} scroll-mt-[3rem] scroll-smooth py-[2rem] md:py-[3rem] border-b border-[rgba(0,0,0,0.2)] ${className}`} {...props}>
+            <h1 className="text-[1.5rem] md:text-[2rem] font-bold mb-[1rem]">Why <span className="text-blue-600 ">PERFECTION</span> ?</h1>
             <div className="opacity-80 text-[1.1rem]/7.5">
                 <p >
                     In the professional world, success often comes down to small but powerful habits. From writing the perfect email to making a strong first impression, every action counts. That's why we've distilled the essentials into 10 secret recipes—one for each letter of PERFECTION.
                 </p>
                 <ul className="flex mt-[1rem] gap-[0.5rem]  items-center flex-wrap">
-                    {perfectionTitles.map((title, i) => <li key={i} className={`group min-w-[8rem] rounded-[0.6rem] hover:text-black hover:bg-white transition duration-200  h-[2rem] border`}><TitleToAnchor initialClass={"text-yellow-600 group-hover:text-black duration-200"} word={title} /></li>)}
+                    {perfectionTitles.map((title, i) => <li key={i} className={`group min-w-[8rem] rounded-[0.6rem] hover:text-white hover:bg-black transition duration-200  h-[2rem] border`}><TitleToAnchor initialClass={"text-blue-600 group-hover:text-white duration-200"} word={title} /></li>)}
                 </ul>
                 <p className="mt-[2rem]">
                     These recipes aren't just tips; they're practical skills you can apply every day to sharpen your edge, stand out professionally, and build lasting confidence. Mastering them will help you communicate clearly, act ethically, and leave a positive impression wherever you go.
