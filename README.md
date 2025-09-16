@@ -1,12 +1,28 @@
-# React + Vite
+# secret-recipes
+This is a simple webpage that presents 10 Secret Recipes for Professional Success using the acronym PERFECTION.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Sections:
+  1. Hero - main title and description.
+  2. Why PERFECTION - introduction to the idea.
+  3. PERFECTION recipes - the 10 secret-recipes explained. 
+  4. Finally - closure and key takeaway.
 
-Currently, two official plugins are available:
+## Screenshots:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- ### Desktop View
 
-## Expanding the ESLint configuration
+![Desktop Screenshot](public/screenshots/desktop.png)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- ### Mobile View
+
+<img src="public/screenshots/phone.jpg" alt="Mobile Screenshot" width="350"/>
+
+## Live Page
+
+👉 [wdataw.github.io/secret-recipes](https://wdataw.github.io/secret-recipes/)
+
+
+## technologies:
+  1. React.js
+  2. Tailwind CSS
+  3. Framer Motion
